@@ -1,0 +1,140 @@
+
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body {
+  background-image: url('https://i.postimg.cc/brd52bPL/anime-frieren.gif'); /* Replace with your image URL */
+  background-size: cover; /* Options: cover, contain, etc. */
+  background-position: center;
+}
+:root {
+  touch-action: pan-x pan-y;
+  height: 100% 
+}
+  .button-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+  }
+
+  .fonn {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    cursor: default;
+  }
+
+  .button {
+    border: 3px solid #000000;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    padding: 20px 90px;
+    color: #000000;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    background-image: url('https://i.postimg.cc/tRrzYGWD/Proyek-Baru-4-8987-BA9.png');
+    background-size: cover;
+    background-position: center;
+    width: 450px;
+    height: 120px;
+    cursor: default;
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .popup {
+    position: fixed;
+    border: 7px solid #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    padding: 20px 90px;
+    color: #000000;
+    display: inline-block;
+    background-image: url('https://i.postimg.cc/nrHF83vr/1000312626-picsay.png');
+    background-size: cover;
+    background-position: center;
+    width: 800px;
+    height: 500px;
+    cursor: default;
+  }
+  .klr {
+background-image: url('https://i.postimg.cc/jSjDnSn2/Proyek-Baru-6-F4-E420-B.png');
+    transform: translate(-130%, -70%);
+    width: 100px;
+    height: 100px;
+        background-size: cover;
+    background-position: center;
+  }
+
+
+.button:active {
+  transform: scale(0.95);
+}
+.button:not(:hover):not(:active) {
+  transform: scale(1);
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="button-container">
+<h1 class="fonn" style="font-size: 30px;">Dont Forget To Say</h1>
+<p class="fonn" style="font-size: 70px;">JIR</p>
+  <button class="button" id="button1">Playlist Galau</button>
+<hr style="border:0; border-top: 25px solid rgba(0,0,0,0.1);"> 
+  <button class="button" id="button2">Link 2</button>
+<hr style="border:0; border-top: 25px solid rgba(0,0,0,0.1);"> 
+  <button class="button" id="button3">Link 2</button>
+<hr style="border:0; border-top: 25px solid rgba(0,0,0,0.1);"> 
+ <button class="button" onclick="showPopup()">cara move on</button>
+
+
+    <div class="popup" style="display: none;">
+        <img src="https://i.postimg.cc/Fz2LVtM8/1730238944-picsay.png" class="klr" onclick="hidePopup()">
+    </div>
+
+
+</div>
+
+
+
+<script>
+  function showAlert() {
+    alert("Maaf, hanya orang sigma yang bisa mengakses ini");
+  }
+
+  const button1 = document.getElementById('button1');
+  const button2 = document.getElementById('button2');
+  const button3 = document.getElementById('button3');
+  const button4 = document.getElementById('button4');
+
+  button1.addEventListener('click', function() {
+    window.location.href = 'https://open.spotify.com/playlist/0cFVj6cmmmLWCHq668gOIp?si=7f03f65c0c5045e3';});
+
+  button2.addEventListener('click', function() {
+    window.location.href = 'https://www.google.com';});
+
+function showPopup() {
+    document.querySelector('.popup').style.display = 'block';
+    
+}
+
+function hidePopup() {
+    document.querySelector('.popup').style.display = 'none';
+}
+</script>
+
+</body>
+</html>

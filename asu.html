@@ -12,6 +12,12 @@ body {
   touch-action: pan-x pan-y;
   height: 100% 
 }
+  .button:active {
+  transform: scale(0.95);
+}
+.button:not(:hover):not(:active) {
+  transform: scale(1);
+}
   .button-container {
     height: 80vh;
     display: flex;
@@ -75,13 +81,6 @@ background-image: url('https://i.postimg.cc/jSjDnSn2/Proyek-Baru-6-F4-E420-B.png
     background-position: center;
   }
 
-
-.button:active {
-  transform: scale(0.95);
-}
-.button:not(:hover):not(:active) {
-  transform: scale(1);
-}
 </style>
 </head>
 <body>
